@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@layer reset, base, navigation;
+
+@layer reset {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+  }
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 14px;
+  }
+}
+
+/* Color variables */
+@layer base {
+  :root {
+    --background-color: white;
+    --text-color: black;
+    --primary-color: #162a41;
+    --secondary-color: #6c757d;
+    --light-bg: #ffffff;
+    --dark-bg: #343a40;
+    --light-text: #ffffff;
+    --dark-text: #000000;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: black;
+      --text-color: white;
+      --secondary-color: #adb5bd;
+      --light-bg: #495057;
+      --dark-bg: #000000;
+    }
+  }
+}
+
+@layer base {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+    /* background-color: var(--background-color);
+    color: var(--text-color); */
+  }
+}

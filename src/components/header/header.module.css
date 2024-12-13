@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.header {
+  font-family: "Roboto";
+}
+.layer1 {
+  background-color: var(--text-color);
+  /* text-color in globals.css is black and background-color is white */
+  display: flex;
+  padding: 0 20%;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.unorderedlist {
+  display: flex;
+  flex: 1;
+  min-width: 250px;
+  max-width: 600px;
+}
+.emailcontainer {
+  display: flex;
+  padding-right: 1rem;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--background-color);
+}
+.phonecontainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--background-color);
+}
+.logincontainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--background-color);
+  margin-right: 0;
+}
+
+.navigation {
+  padding: 0 20%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.navbar {
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerNavLinks {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.logocontainer {
+  display: flex;
+  justify-content: center;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.logo {
+  margin-top: 2rem;
+}
+.headerNavLinks {
+  color: var(--text-color);
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+  color: var(--text-color);
+  opacity: 0.8;
+
+  &:hover {
+    text-decoration: none;
+    opacity: 1;
+    border-bottom: 1px solid var(--text-color);
+  }
+}
